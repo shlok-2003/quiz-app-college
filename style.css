@@ -193,7 +193,7 @@ section .option_list{
 
 section .option_list .option{
     background: aliceblue;
-    border: 1px solid #84c5fe;
+    border: 1px solid black;
     border-radius: 5px;
     padding: 8px 15px;
     font-size: 17px;
@@ -211,7 +211,8 @@ section .option_list .option:last-child{
 
 section .option_list .option:hover{
     color: #004085;
-    background: #cce5ff;
+    font-weight: bolder;
+    background: gray;
     border: 1px solid #b8daff;
 }
 
