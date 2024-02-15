@@ -1,4 +1,4 @@
-const indianHistoryQuestions = [
+const questions = [
     {
         numb: 6,
         question:
