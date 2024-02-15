@@ -214,6 +214,7 @@ section .option_list .option:hover{
     font-weight: bolder;
     background: gray;
     border: 1px solid #b8daff;
+    transition-duration: 100ms;
 }
 
 section .option_list .option.correct{
