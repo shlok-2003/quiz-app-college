@@ -1,5 +1,60 @@
 const questions = [
-    {
+  {
+    numb: 1,
+    question: "Who was the first President of India?",
+    answer: "Dr. Rajendra Prasad",
+    options: [
+      "Jawaharlal Nehru",
+      "Dr. Rajendra Prasad",
+      "Sardar Patel",
+      "Indira Gandhi"
+    ]
+  },
+  {
+    numb: 2,
+    question: "The famous 'Jallianwala Bagh massacre' took place in which city?",
+    answer: "Amritsar",
+    options: [
+      "Delhi",
+      "Mumbai",
+      "Amritsar",
+      "Kolkata"
+    ]
+  },
+  {
+    numb: 3,
+    question: "Who was known as the 'Iron Man of India'?",
+    answer: "Sardar Vallabhbhai Patel",
+    options: [
+      "Jawaharlal Nehru",
+      "Sardar Vallabhbhai Patel",
+      "Subhas Chandra Bose",
+      "Lal Bahadur Shastri"
+    ]
+  },
+  {
+    numb: 4,
+    question: "The Indian National Army (INA) was formed by which leader during World War II?",
+    answer: "Subhas Chandra Bose",
+    options: [
+      "Mahatma Gandhi",
+      "Subhas Chandra Bose",
+      "Bhagat Singh",
+      "Jawaharlal Nehru"
+    ]
+  },
+  {
+    numb: 5,
+    question: "The ancient city of Mohenjo-daro is part of which ancient civilization?",
+    answer: "Indus Valley Civilization",
+    options: [
+      "Vedic Civilization",
+      "Maurya Empire",
+      "Gupta Empire",
+      "Indus Valley Civilization"
+    ]
+  },  
+  {
         numb: 6,
         question:
             'Who was the first Emperor of the Maurya Dynasty in ancient India?',
