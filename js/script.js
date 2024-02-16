@@ -56,7 +56,7 @@ restart_quiz.onclick = ()=>{
 }
 
 quit_quiz.onclick = ()=>{
-    window.location.reload();
+    window.location.replace('/index.html');
 }
 
 const next_btn = document.querySelector("footer .next_btn");
