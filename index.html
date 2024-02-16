@@ -3,66 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TCET College Quiz App</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwesome CDN Link for Icons-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div class="start_btn"><button>Start Quiz</button></div>
-
-    <div class="info_box">
-        <div class="info-title"><span>Some Rules of this Quiz</span></div>
-        <div class="info-list">
-            <div class="info">1. You will have only <span>15 seconds</span> per each question.</div>
-            <!-- <div class="info">2. Once you select your answer, it can't be undone.</div>
-            <div class="info">3. You can't select any option once time goes off.</div>
-            <div class="info">4. You can't exit from the Quiz while you're playing.</div>
-            <div class="info">5. You'll get points on the basis of your correct answers.</div> -->
-        </div>
-        <div class="buttons">
-            <button class="quit">Exit Quiz</button>
-            <button class="restart">Continue</button>
-        </div>
-    </div>
-
-    <div class="quiz_box">
-        <header>
-            <div class="title">TCET T&P Quiz</div>
-            <div class="timer">
-                <div class="time_left_txt">Time Left</div>
-                <div class="timer_sec">15</div>
-            </div>
-            <div class="time_line"></div>
-        </header>
-        <section>
-            <div class="que_text">
-            </div>
-            <div class="option_list">
-            </div>
-        </section>
-        
-        <footer>
-            <div class="total_que">
-            </div>
-            <button class="next_btn">Next Que</button>
-        </footer>
-        </div>
-
-    <div class="result_box">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
-        <div class="complete_text">You've completed the Quiz!</div>
-        <div class="score_text">
-        </div>
-        <div class="buttons">
-            <button class="restart">Replay Quiz</button>
-            <button class="quit">Quit Quiz</button>
-        </div>
-    </div>
     
-    <script src="js/questions.js"></script>
-    <script src="js/script.js"></script>
+    <div id="container">
+
+        <div id="header">
+            <!--<h1>Login Form</h1>
+            <span>Fill out the form below to login to my super awesome imaginary control panel.</span>-->
+
+            <div id="statusindicator">
+                <span id="status">Not logged in</span>
+            </div>
+        </div>
+        
+
+        <div id="splashscreen">
+            <h2>Hi, please Sign In</h2>
+            <button id="btn_signin">Sign In</button>
+        </div>
+
+        <div id="login">
+            <form>
+                <label for="text_username">Username</label>
+                <input type="text" name="text_username" id="text_username" value="">
+                <label for="text_password">Password</label>
+                <input type="password" name="text_password" id="text_password" value="">
+            </form>
+            <span id="notify"></span>
+            <button id="btn_submit">Submit</button>
+            <button id="btn_cancel">Cancel</button>
+
+            
+        </div>
+
+        <div id="loggedin">
+            <h3 id="hellouser"></h3>
+            <button id="btn_logout">Logout</button>
+            <button> <a href="/quiz.html">Enter the quiz</a> </button>
+        </div>
+
+        <!--<div id="hint">click to enter the login view</div>-->
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script charset="utf-8" src="login.js"></script>
 </body>
 </html>
